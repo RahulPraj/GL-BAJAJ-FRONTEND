@@ -119,3 +119,128 @@ let lastName = "Prajapati";
 //     // console.log(i)
 //     console.log(person[i])
 // }
+
+// // weekly type programming lang
+// let a = "rahul";
+// a = 26;
+// a = true
+// console.log(a); //dynaimcally type
+
+// // synchronous 
+// console.log("how are you");
+// console.log("today weather is cold")
+
+
+// let vs var vs const
+// let
+// let a = "rahul";
+// // let a ="rahul";
+// a = true;
+// console.log(a);
+
+//var 
+// var a = "rahul";
+// var a ="rahul";
+// a = true;
+// console.log(a);
+
+// hoisting
+
+// console.log(a);
+// var a = 10;
+// let a = 10;
+// console.log(a);
+
+// Array method
+// let arr = [2,4,5,6];
+
+// console.log(arr)
+// arr.push("shiv",true,undefined);
+// console.log(arr)
+
+// arr.pop();
+// console.log(arr);
+
+//splice
+// let fruits = ["apple","banana","mango","graps"]
+// console.log(fruits);
+// fruits.splice(2,0,"orange","tomato");
+// console.log(fruits);
+
+// slice
+// let newFruits= fruits.slice(2)
+// console.log(newFruits)
+
+// hof
+
+// function A(B){
+//     console.log("i am inside function A")
+//     B();
+// }
+
+// function B(){
+//     console.log("i am inside function B")
+// }
+
+// case 1
+// A(B);
+// A(function B(){
+//     console.log("i am inside function B")
+// })
+
+//case2
+// function A(){
+//     console.log("i am inside function A")
+   
+//     function B(){
+//         console.log("i am inside function B")
+//     }
+//     return B;
+// }
+// let ans = A()
+// console.log(ans());
+
+// array advance method
+let arr = [2,4,6,8,10];
+// arr.forEach(function (item,index){
+//     console.log(item*2);
+// })
+
+// let newArr = arr.map(function(item,index){
+//     return (`index:${index}and value:${item*2}`)
+// })
+// console.log(newArr);
+
+// let newFilter = arr.filter(function(item,index){
+//     if(item >= 5){
+//         return [item];
+//     }
+// })
+// console.log(newFilter)
+
+// async vs sync
+// console.log("first");
+// console.log("middle");
+// console.log("last");
+
+// async
+// console.log("first");
+// setTimeout(function(){
+//     console.log("middle run after 4 sec");
+// },4000)
+
+// setTimeout(function(){
+//     console.log("middle run after 2 sec");
+// },2000)
+// console.log("last");
+
+// setInterval
+let timer = 0;
+let id = setInterval(function(){
+    timer++;
+    console.log(`timer:${timer}`)
+    if(timer === 7){
+        clearInterval(id)
+        console.log("thala for a reason")
+    }
+},1000)
