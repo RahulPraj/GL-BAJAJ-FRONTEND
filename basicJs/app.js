@@ -234,13 +234,13 @@ let arr = [2,4,6,8,10];
 // },2000)
 // console.log("last");
 
-// setInterval
-let timer = 0;
-let id = setInterval(function(){
-    timer++;
-    console.log(`timer:${timer}`)
-    if(timer === 7){
-        clearInterval(id)
-        console.log("thala for a reason")
-    }
-},1000)
+// // setInterval
+// let timer = 0;
+// let id = setInterval(function(){
+//     timer++;
+//     console.log(`timer:${timer}`)
+//     if(timer === 7){
+//         clearInterval(id)
+//         console.log("thala for a reason")
+//     }
+// },1000)

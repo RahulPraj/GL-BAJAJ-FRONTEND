@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Search App</title>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>🎬 Movie<span>Search</span></h1>
+        <p>Find your next favourite show in seconds</p>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search shows... e.g. Friends, Batman" autocomplete="off">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <main id="container">
+        <p id="message"></p>
+
+        <!-- Category sliders -->
+        <div id="categories"></div>
+
+        <!-- Search results -->
+        <h4 id="heading" style="display:none"></h4>
+        <div id="list"></div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
