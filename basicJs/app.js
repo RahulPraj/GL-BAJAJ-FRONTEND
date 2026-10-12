@@ -244,3 +244,31 @@ let arr = [2,4,6,8,10];
 //         console.log("thala for a reason")
 //     }
 // },1000)
+
+
+// let p1 = new Promise(function(resolve,reject){
+//     console.log("wait i have send the request");
+//     setTimeout(function(){
+//         let data = "hii i am data from databse";
+//         let err = "sorry request failed";
+//         resolve(data);
+//         reject(err);
+//     },2000)
+// })
+
+// p1.then(function(data){
+//     console.log(data);
+//     console.log("promise fullfilled");
+// }).catch(function(err){
+//     console.log(err)
+// })
+
+//async-await
+
+// async function getData(){
+//     let response = await fetch("https://api.tvmaze.com/search/shows?q=girls");
+//     let data = await response.json()
+//     // console.log(response);
+//     console.log(data)
+// }
+// console.log(getData())
